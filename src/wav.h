@@ -27,6 +27,7 @@ namespace muses {
 		int open(const char* path);
 		int16_t getSample();
 		int seek(int offset);
+		wav_info& getInfo();
 	private:
 		FILE* fp;
 		wav_info info;

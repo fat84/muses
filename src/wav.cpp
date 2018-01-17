@@ -69,3 +69,9 @@ int16_t wav::getSample() {
 int wav::seek(int offset) {
 	return fseek(fp, data_offset + offset, SEEK_SET);
 }
+
+wav_info & muses::wav::getInfo()
+{
+	// TODO: 在此处插入 return 语句
+	return info;
+}
